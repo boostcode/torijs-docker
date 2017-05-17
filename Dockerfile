@@ -7,6 +7,8 @@ EXPOSE 8000
 ENV HOME /home/torijs
 VOLUME ${HOME}
 
-RUN npm install
-
+# Download repo
 RUN git clone https://github.com/boostcode/torijs.git /home/torijs
+
+# Install libs
+RUN npm install
