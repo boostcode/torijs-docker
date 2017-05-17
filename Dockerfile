@@ -9,4 +9,4 @@ VOLUME ${HOME}
 
 RUN npm install
 
-RUN git checkout git@github.com:boostcode/torijs.git /home/torijs
+RUN git clone git@github.com:boostcode/torijs.git -C /home/torijs
