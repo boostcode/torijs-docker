@@ -1,5 +1,5 @@
 FROM node:latest
-MAINTAINER Matteo Crippa @ghego20
+MAINTAINER Matteo Crippa @_ghego
 
 # Expose port
 EXPOSE 8000
@@ -9,4 +9,4 @@ VOLUME ${HOME}
 
 RUN npm install
 
-RUN git clone git@github.com:boostcode/torijs.git /home/torijs
+RUN git clone https://github.com/boostcode/torijs.git /home/torijs
